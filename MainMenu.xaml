@@ -1,0 +1,29 @@
+﻿<Window x:Class="RestaurentMngment.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestaurentMngment"
+        mc:Ignorable="d"
+        Title="MainMenu"
+        Background="#282828" WindowStyle="None" WindowState="Maximized">
+    <Grid Margin="20,0,20,20" >
+        <Label Content="Main Menu" FontWeight="Bold" Foreground="#AB82FF" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Grid Margin="0,25,0,0" Background="#5E2612">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Button Name="billing" Background="#8B4513" FontSize="40" FontWeight="Bold" Margin="24,24,12,12" Click="billing_Click">Billing</Button>
+            <Button Grid.Column="1" Name="manage" Background="#8B4513" FontSize="40" FontWeight="Bold" Margin="12,24,24,12" Click="manage_Click">Manage</Button>
+            <Button Grid.Row="1" Name="report" Background="#8B4513" FontSize="40" FontWeight="Bold" Margin="24,12,12,12" Click="report_Click">Report</Button>
+            <Button Grid.Row="1" Grid.Column="2" x:Name="texreport" Background="#8B4513" FontSize="40" FontWeight="Bold" Margin="12,12,24,12" Click="texreport_Click" Content="TAX Report"/>
+            <Button Grid.Row="2" Grid.ColumnSpan="2" Name="logout" Background="#8B4513" FontSize="40" FontWeight="Bold" Margin="24,12,24,24" Click="logout_Click">Log Out</Button>
+        </Grid>
+    </Grid>
+</Window>
